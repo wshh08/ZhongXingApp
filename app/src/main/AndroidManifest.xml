@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lightgo.zhongxing">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zte"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="UpEebuH0GGpUNA1WdAjj0R1TesY68TT5" />
+
+        <activity android:name=".Welcome.WelcomeActivity">
+            <!--  Intent过滤器用于声明其他应用组件激活该Activity的方法
+            此处设置WelcomeActivity为用户点击app图标后启动的第一个Activity -->
+            <intent-filter>
+                <!-- <action> 元素指定这是应用的“主”入口点 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- <category> 元素指定此 Activity 应列入系统的应用启动器内（以便用户启动该 Activity） -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".IndexActivity" />
+        <activity android:name=".XueyuanActivity"
+                   android:label="学院简介" />
+        <activity android:name=".ZTEActivity"
+            android:label="中兴通讯" />
+        <activity android:name=".TuanduiActivity"
+            android:label="师资团队" />
+        <activity android:name=".ElegantActivity"
+            android:label="学院风采" />
+        <activity android:name=".ZhuanxingActivity"
+            android:label="转型发展" />
+        <activity android:name=".NagivationActivity" />
+        <activity android:name=".HouseActivity" />
+        <activity android:name=".labvedioone" />
+        <activity android:name=".JidiActivity" />
+        <activity android:name=".ShiyanshiActivity" />
+        <activity android:name=".StudentJar.HuodongInformation" />
+        <activity android:name=".StudentJar.JiangliInformation" />
+        <activity android:name=".StudentJar.ChufaInformation" />
+        <activity android:name=".StudentJar.Gexing" />
+        <activity android:name=".StudyCommunity.LoginActivity" />
+        <activity android:name=".UserMessage.AdminActivity" />
+        <activity android:name=".HtmlWebView" />
+        <activity android:name=".UserMessage.StudentActivity" />
+        <activity android:name=".CSWebActivity" />
+        <activity android:name=".TWebActivity" />
+        <activity android:name=".StudentJar.BaseInformation" />
+        <activity android:name=".CollegeIntroduce.IntroduceActvity" />
+        <activity android:name=".CollegeIntroduce.ProcessActivity" />
+        <activity android:name=".CollegeIntroduce.MessageActivity" />
+        <activity android:name=".UserMessage.BslcActivity" />
+        <activity android:name=".CheckActivity.DailyCheckActivity" />
+        <activity android:name=".CheckActivity.DCheckActivity" />
+        <activity android:name=".CheckActivity.DSelectActivity"/>
+        <activity android:name=".AdminUser.ClassRankActivity" />
+        <activity android:name=".AdminUser.TodayCheckActivity" />
+        <activity android:name=".AdminUser.StudentInfoActivity" />
+        <activity android:name=".AdminUser.ToBeProcessActivity" />
+        <activity android:name=".StudyCommunity.BrowsList"/>
+        <activity android:name=".StudyCommunity.WriteBBS"/>
+        <activity android:name=".StudyCommunity.BrowsContent"/>
+        <activity android:name=".StudyCommunity.WriteComment"/>
+        <activity android:name=".Inweb"/>
+        <activity android:name="me.iwf.photopicker.PhotoPickerActivity" />
+        <activity android:name="me.iwf.photopicker.PhotoPagerActivity"/>
+        <activity android:name=".ActActivity.ActShowActivity"/>
+        <activity android:name=".ActActivity.AddActivity" />
+        <activity android:name=".ActActivity.SignInActivity" />
+        <activity android:name=".ActActivity.StuInfoActivity" />
+        <activity android:name=".ActActivity.EditActivity" />
+        <activity android:name=".ActActivity.ChooseActivity"/>
+        <activity android:name=".HostelCheck.HostelActivity"/>
+        <activity android:name=".HostelCheck.HCheckActivity"/>
+        <activity android:name=".HostelCheck.HSelectActivity"/>
+        <activity android:name=".HostelCheck.HCheck1Activity"/>
+    </application>
+
+</manifest>
